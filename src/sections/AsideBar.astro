@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import logoImg from '../assets/images/logo-amvehiculos.png';
+---
+
+<aside
+	class="hidden shrink-0 border-white/5 bg-surface md:flex md:w-65 md:flex-col md:h-dvh md:items-center md:border-r md:py-4 md:sticky md:top-0 md:left-0"
+>
+	<a href="/" class="flex w-full justify-center px-2">
+		<Image
+			src={logoImg}
+			alt="Logo AM Vehiculos"
+			width={logoImg.width}
+			height={logoImg.height}
+			class="size-40 object-contain"
+		/>
+	</a>
+</aside>

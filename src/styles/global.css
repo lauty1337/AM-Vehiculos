@@ -1,2 +1,65 @@
 @import "tailwindcss";
 @import "lenis/dist/lenis.css";
+
+
+
+/* Inter Font Normal*/
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/inter/inter-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+/*Inter Font Medium*/
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/inter/inter-latin-500-normal.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+/*Inter font semibold*/
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/inter/inter-latin-600-normal.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+/*Space Grotesk Font Normal*/
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('/fonts/space-grotesk/space-grotesk-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+/*Space Grotesk Font Medium*/
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('/fonts/space-grotesk/space-grotesk-latin-500-normal.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+/*Space Grotesk Font Semibold*/
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('/fonts/space-grotesk/space-grotesk-latin-600-normal.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@theme {
+    --font-sans: 'Inter', sans-serif;
+    --font-display: 'Space Grotesk', serif;
+
+    --color-primary: #ffffff;
+    --color-secondary: #a1a1aa;
+    --color-accent: #ef4444; /*Rojo del logo*/
+
+    --color-background: #0a0a0a; /*fondo de la pagina*/
+    --color-surface: #111111; /*Cards, Secciones*/
+    --color-border: #262626; /*Bordes sutiles*/
+
+    --color-text-primary: #ffffff; /*Texto principal*/
+    --color-text-secondary: #9CA3AF; /*Texto secundario*/
+    --color-muted: #525252; /*Texto menos importante*/
+}

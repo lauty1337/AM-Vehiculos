@@ -1,0 +1,112 @@
+---
+import { Image } from 'astro:assets';
+import logoImg from '../assets/images/logo-amvehiculos.png';
+
+/*SVG Icons*/
+
+// SVGS de redes sociales
+import TikTokIcon from '../assets/svgs/TikTok.svg';
+import InstagramIcon from '../assets/svgs/Instagram.svg';
+import WhatsAppIcon from '../assets/svgs/WhatsApp.svg';
+import FacebookIcon from '../assets/svgs/Facebook.svg';
+import YouTubeIcon from '../assets/svgs/YouTube.svg';
+
+// SVGS de metodos de pago
+import MercadoPagoIcon from '../assets/svgs/MercadoPago.svg';
+import MasterCardIcon from '../assets/svgs/MasterCard.svg';
+import VisaIcon from '../assets/svgs/Visa.svg';
+
+// SVGS de metodos de envío
+import OCAIcon from '../assets/svgs/OCA.svg';
+
+// Otros SVGS
+import LocationIcon from '../assets/svgs/Location.svg';
+---
+
+
+<footer class="bg-surface border-t border-border/40">
+    <div class="flex flex-col gap-4 px-6 py-10">
+
+        <div class="grid grid-cols-2 gap-10">
+
+            <!-- Logo y descripción -->
+            <div class="flex flex-col col-span-2">
+                <a href="/" class="flex w-full">
+                    <Image
+                        src={logoImg}
+                        alt="AM Vehiculos"
+                        width={logoImg.width}
+                        height={logoImg.height}
+                        class="w-40 h-auto object-contain"
+                    />
+                </a>
+                <p class="text-sm text-secondary mt-6">
+                    Coleccionables de la mejor calidad
+                </p>
+            </div>
+
+            <!-- Navegación de experiencia -->
+            <div class="flex flex-col gap-4">
+                <h3 class="font-display font-normal text-muted uppercase text-sm tracking-widest">
+                    Experiencia
+                </h3>
+                <nav aria-label="Menu de navegación de la sección de experiencia">
+                    <ul class="flex flex-col gap-2">
+                        <li>
+                            <a href="/" class="text-sm text-secondary hover:text-primary transition-colors duration-300">
+                                Productos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" class="text-sm text-secondary hover:text-primary transition-colors duration-300">
+                                Sobre nosotros
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Navegación de coleccionables -->
+            <div class="flex flex-col gap-4">
+                <h3 class="font-display font-normal text-muted uppercase text-sm tracking-widest">
+                    Coleccionables
+                </h3>
+                    <nav aria-label="Menu de navegación de la sección de coleccionables">
+                        <ul class="flex flex-col gap-2">
+                            <li>
+                                <a href="/" class="text-sm text-secondary hover:text-primary transition-colors duration-300">
+                                    Coleccionables
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+            </div>
+
+            <div class="flex flex-col gap-4 col-span-2">
+                <div class="mx-auto w-full max-w-90">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d624.9007299951077!2d-60.936942131095385!3d-34.596082674762336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-34.596029699999995!2d-60.9374451!4m5!1s0x95b8eb275dbf01f3%3A0x2d875523c6b19ea9!2sAm%20Juguetes%2C%20Jos%C3%A9%20Garibaldi%20309%2C%20B6000%20Jun%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.5961496!2d-60.936955!5e1!3m2!1ses-419!2sar!4v1776238754578!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación en Google Maps" referrerpolicy="no-referrer-when-downgrade" class="w-90 h-70"></iframe>
+                </div>
+                <address class="flex items-center gap-2 text-xs text-secondary">
+                    <LocationIcon class="size-4"/>
+                    José Garibaldi 309, Junín, Argentina
+                </address>
+                <h3 class="font-display font-normal text-muted uppercase text-sm tracking-widest mt-5">
+                    Horarios de atención
+                </h3>
+                <dl class="flex flex-col gap-4 divide-y divide-border  text-xs text-secondary">
+                    <div class="flex items-center justify-between py-2">
+                        <dt class="font-medium">Lun/Vie</dt>
+                        <dd class="font-medium">10:00-12:00 / 19:00-21:00</dd>
+                    </div>
+                    <div class="flex items-center justify-between text-accent py-2">
+                        <dt class="font-medium">Sábado</dt>
+                        <dd class="font-medium">Cerrado</dd>
+                    </div>
+                    <div class="flex items-center justify-between text-accent py-2">
+                        <dt class="font-medium">Domingo</dt>
+                        <dd class="font-medium">Cerrado</dd>
+                    </div>
+                </dl>
+            </div>
+    </div>
+</footer>

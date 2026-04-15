@@ -13,13 +13,15 @@ import Footer from '../sections/Footer.astro';
 		<link rel="icon" href="/favicon.ico" />
 		<title>AM Vehículos</title>
 	</head>
-	<body>
-		<main>
-			<Header />
+	<body class="bg-background">
+		<div class="md:flex md:min-h-dvh">
 			<AsideBar />
-			<slot />
-			<Footer />
-		</main>
+			<main class="min-w-0 flex-1">
+				<Header />
+				<slot />
+				<Footer />
+			</main>
+		</div>
 		<script src="../scripts/lenis.js"></script>
 	</body>
 </html>
