@@ -25,10 +25,10 @@ import LocationIcon from '../assets/svgs/Location.svg';
 
 
 <footer class="bg-surface border-t border-border/40">
+
     <div class="flex flex-col gap-4 px-6 py-10">
 
-        <div class="grid grid-cols-2 gap-10">
-
+        <div class="grid grid-cols-2 gap-10 py-10">
             <!-- Logo y descripción -->
             <div class="flex flex-col col-span-2">
                 <a href="/" class="flex w-full">
@@ -93,20 +93,84 @@ import LocationIcon from '../assets/svgs/Location.svg';
                 <h3 class="font-display font-normal text-muted uppercase text-sm tracking-widest mt-5">
                     Horarios de atención
                 </h3>
-                <dl class="flex flex-col gap-4 divide-y divide-border  text-xs text-secondary">
-                    <div class="flex items-center justify-between py-2">
-                        <dt class="font-medium">Lun/Vie</dt>
-                        <dd class="font-medium">10:00-12:00 / 19:00-21:00</dd>
+                <dl class="flex flex-col gap-4 divide-y divide-border text-xs font-medium">
+                    <div class="flex items-center justify-between text-secondary py-2">
+                        <dt>Lun/Vie</dt>
+                        <dd>10:00-12:00 / 19:00-21:00</dd>
                     </div>
                     <div class="flex items-center justify-between text-accent py-2">
-                        <dt class="font-medium">Sábado</dt>
-                        <dd class="font-medium">Cerrado</dd>
+                        <dt>Sábado</dt>
+                        <dd>Cerrado</dd>
                     </div>
                     <div class="flex items-center justify-between text-accent py-2">
-                        <dt class="font-medium">Domingo</dt>
-                        <dd class="font-medium">Cerrado</dd>
+                        <dt>Domingo</dt>
+                        <dd>Cerrado</dd>
                     </div>
                 </dl>
             </div>
+        </div>
+        <div class="py-10 border-t flex justify-between border-border/40">
+            <div class="flex flex-col gap-4">
+                <h3 class="font-display font-normal text-muted uppercase text-sm tracking-widest">
+                    Metodos de pago
+                </h3>
+                <ul class="flex items-center gap-4">
+                    <li>
+                        <MercadoPagoIcon class="size-7 md:opacity-60 hover:opacity-100 transition-opacity duration-300"/>
+                    </li>
+                    <li>
+                        <MasterCardIcon class="size-7 md:opacity-60 hover:opacity-100 transition-opacity duration-300"/>
+                    </li>
+                    <li>
+                        <VisaIcon class="size-7 md:opacity-60 hover:opacity-100 transition-opacity duration-300"/>
+                    </li>
+                    <li>
+                        <span class="text-xs text-secondary p-2 border border-border/30">
+                            Efectivo
+                        </span>
+                    </li>
+                </ul>
+                <h3 class="font-display font-normal text-muted uppercase text-sm tracking-widest mt-5">
+                    Metodos de envío
+                </h3>
+                <ul class="flex items-center gap-4">
+                    <li>
+                        <OCAIcon class="size-10  md:opacity-60 fill-white hover:opacity-100 transition-opacity duration-300"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-center items-center flex-col gap-4 border-t border-border/40 pt-10">
+            <ul class="flex items-center gap-4 ">
+                <li>
+                    <a href="/" class="fill-white/60 hover:fill-white transition-colors duration-300">
+                        <FacebookIcon class="size-5" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="fill-white/60 hover:fill-white transition-colors duration-300">
+                        <InstagramIcon class="size-5" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="fill-white/60 hover:fill-white transition-colors duration-300">
+                        <WhatsAppIcon class="size-5" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="fill-white/60 hover:fill-white transition-colors duration-300">
+                        <YouTubeIcon class="size-5" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="fill-white/60 hover:fill-white transition-colors duration-300">
+                        <TikTokIcon class="size-5" />
+                    </a>
+                </li>
+            </ul>
+            <p class="text-xs text-secondary text-center mt-2">
+                &copy; 2026 AM Vehiculos. Todos los derechos reservados.
+            </p>
+        </div>
     </div>
 </footer>
